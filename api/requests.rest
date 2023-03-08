@@ -1,0 +1,29 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todos/new
+Content-Type:  application/json
+
+{
+    "text":"sattwik"
+}
+
+###
+
+DELETE http://localhost:3001/todos/delete/6404e145258bf1a697fcc29f
+
+
+###
+
+GET http://localhost:3001/todos/complete/6404e108258bf1a697fcc299
+
+
+###
+
+PUT http://localhost:3001/todo/update/6404e108258bf1a697fcc299 
+Content-Type: application/json
+
+{
+"text": "Go Shopping for Milk"
+}
