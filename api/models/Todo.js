@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 //making model (dabase)
+
 const Todoschema = new Schema({
 text: {
     //objects
@@ -10,6 +11,7 @@ text: {
 
 
 },
+
 author: {
     //objects
     type:String,
