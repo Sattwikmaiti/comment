@@ -5,7 +5,8 @@ import "./App.css"
 import ChatBot from "react-simple-chatbot";
 import { CloudUploadFill,X, ChatDots,PencilSquare,Trash} from 'bootstrap-icons-react';
 import Comment from "./components/Comment.jsx"
-const api_base = "http://localhost:3001";
+// const api_base = "http://localhost:3001";
+const api_base = "https://comment-sattwik.onrender.com"
 const timestamp = 167822137944;
 const date = new Date(timestamp);
 console.log(typeof timestamp)
