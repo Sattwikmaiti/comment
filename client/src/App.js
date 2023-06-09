@@ -2,103 +2,15 @@ import { useEffect, useState } from "react";
 
 import p1 from "./log.jpg"
 import "./App.css"
-import ChatBot from "react-simple-chatbot";
+
 import { CloudUploadFill,X, ChatDots,PencilSquare,Trash} from 'bootstrap-icons-react';
 import Comment from "./components/Comment.jsx"
 // const api_base = "http://localhost:3001";
-const api_base = "https://comment-sattwik.onrender.com"
+const api_base = "http://localhost:3001"
 const timestamp = 167822137944;
 const date = new Date(timestamp);
 console.log(typeof timestamp)
-const steps = [
 
-  {
-
-    id: "Greet",
-
-    message: "Hello, Welcome to our shop",
-
-    trigger: "Done",
-
-  },
-
-  {
-
-    id: "Done",
-
-    message: "Please enter your name!",
-
-    trigger: "waiting1",
-
-  },
-
-  {
-
-    id: "waiting1",
-
-    user: true,
-
-    trigger: "Name",
-
-  },
-
-  {
-
-    id: "Name",
-
-    message: "Hi {previousValue}, Please select your issue",
-
-    trigger: "issues",
-
-  },
-
-  {
-
-    id: "issues",
-
-    options: [
-
-      {
-
-        value: "React",
-
-        label: "React",
-
-        trigger: "React",
-
-      },
-
-      { value: "Angular", label: "Angular", trigger: "Angular" },
-
-    ],
-
-  },
-
-  {
-
-    id: "React",
-
-    message:
-
-      "Thanks for letting your React issue, Our team will resolve your issue ASAP",
-
-    end: true,
-
-  },
-
-  {
-
-    id: "Angular",
-
-    message:
-
-      "Thanks for letting your Angular issue, Our team will resolve your issue ASAP",
-
-    end: true,
-
-  },
-
-]; 
 function App() {
   //all todos
   
@@ -401,7 +313,7 @@ const update = async(id)=>
           </div>
           <div className="content">
             <h3>Comment </h3>
-            <ChatBot steps={steps} style={{height:'300px'}}/>
+            
             <input
               type="text"
               className="add-todo-input name"
